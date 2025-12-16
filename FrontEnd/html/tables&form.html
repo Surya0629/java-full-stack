@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <table border="2" cellspacing="5" cellpadding="10">
+
+            <thead>
+                <th colspan="2"> Studnet Details</th>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <label for="userName">User Name :</label></td>
+                    <td> <input required type="text" id="userName" placeholder="Enter User Name " name="passwordaa">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Email">Enter Email :</label></td>
+                    <td> <input type="email" id="Email" placeholder="Enter Email" name="passwordaa"></td>
+                </tr>
+                <tr>
+                    <td><label for="passw">Enter Password :</label></td>
+                    <td> <input type="password" placeholder="Enter Password" id="passw" name="passwordaa"></td>
+                </tr>
+                <tr>
+                    <td> <label for="gender">Gender:</label></td>
+                    <td><label for="male">female</label>
+                        <input type="radio" name="nnn" id="male" value="male">
+                        <label for="female">male</label>
+                        <input type="radio" name="nnn" id="female" value="female">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="course">Course</label></td>
+                    <td><input list="list" type="text" name="course" id="course" placeholder="Enter Courses">
+                        <datalist id="list">
+                            <option value="Mern Stack">Mern Stack</option>
+                            <option value="Java FullStack">Java FullStack</option>
+                            <option value="Pytjon Full Stack">Pytjon Full Stack</option>
+                    </td>
+                </tr>
+            </tbody>
+
+
+
+           <tfoot>
+             <tr>
+                <td colspan="2" style="text-align: center;"> <input type="submit"></td>
+            </tr>
+           </tfoot>
+        </table>
+    </form>
+
+</body>
+
+</html>

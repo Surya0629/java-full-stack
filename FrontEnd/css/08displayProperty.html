@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            height: 300px;
+            width: 150px;
+            background-color: black;
+            margin-top: 10px;
+            visibility: hidden;
+            opacity: 0;
+            transition: 1;
+        }
+
+        .btn1:hover+.box1 {
+            visibility: visible;
+
+            opacity: 1;
+            transform: 1s;
+
+        }
+        .container1{
+            height: 500px;
+            width: 100%;
+            background-color: yellow;
+             display: flex;
+             justify-content:center;
+             /* 
+             flex-start/-end/-ceter/-space-around/-space-between
+              */
+              align-items: center;
+              /* align items in y axis--flex-start/flex-ent/center */
+              flex-wrap: wrap;
+              gap: 20px;
+              /* 
+              if flex direction is --row
+                justify-context --x-axis
+                align item --yaxis 
+              else-- 
+                 justify-context --x-axis
+                 align item --yaxis*/
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border: 5px solid red;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Learn Display Property </h1>
+    <button class="btn1">BTN 1</button>
+    <section class="box1"></section> -->
+    <h1>Learn Display Property</h1>
+
+    <main class="container1">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+       
+        <div class="item"></div>
+        <div class="item"></div>
+     
+      
+        <div class="item"></div>
+        <div class="item"></div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[name]{
+
+            /* only for attribute not values */
+            background-color: yellow;
+        }
+        div[name="box1"]{
+            /* for exact  values  */
+            background-color: blue;
+        }
+        div[name|="box3"]{
+            /* check for - */
+            background-color: grey;
+        }
+        div[name~="area"]{
+            /* for space seprated values */
+            background-color: lightseagreen;
+        }
+        div[name^="con"]{
+            background-color: orange;
+            /* starts WIHT */
+        }
+        div[name$="ner"]{
+            background-color: orange;
+            /* eNDS WITH */
+            color: red;
+        }
+        div[name*="are"]{
+            background-color: orange;
+            /* word lies in between   */
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- rarely seprated  -->
+    <h1>Learn Attribute Selector</h1>
+    <div name="box1">Div1</div>
+    <div name="box2">Div2</div>
+    <div name="box3-box">Div3</div>
+    <div name="text area">Div4</div>
+    <div name="container">Div5</div>
+</body>
+</html>

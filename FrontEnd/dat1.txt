@@ -1,0 +1,16 @@
+<Semantic tags>
+    header
+    details
+    article
+    main 
+    nav
+    section 
+    table
+    aside
+    form
+    footer
+Selectors in css--
+    Simple 
+    combinator
+    Psudo class
+    Psudo

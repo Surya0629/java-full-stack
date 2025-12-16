@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        /* Fixed */
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+        }
+        /* depends upon viewport heigth and width  */
+        .box2{
+            height: 50vh;
+            width: 50vw;
+            background-color: aqua;
+        }
+        .parent{
+            height: 500px;
+            width: 500px;
+            background-color: black;
+            color: white;
+        }
+        .child{
+            height: 50%;
+            width: 50%;
+            background-color: red;
+        }
+        .box3{
+            font-size: 80px;
+            width: 1em;
+            height: 1em;
+            
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    5 types of unita 
+    1) Px  -----------Fixed/absolute 
+    2)vh   --------
+    3)%           |
+    4)em          |------relative units(1em = 16px )==default font size---(if we change font size 1em become = font                  font size)
+    5)rem  -------|     1rem = 16px --else depend on root element (:root{} or html)
+    -->
+    <h1>Learn Css Units</h1>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <section class="parent">
+        
+        <article class="child">hey</article>
+       
+    </section>
+    <div class="box3"></div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            color: blueviolet;
+            font-size: 80px;
+            font-family: sans-serif;
+            font-weight: 900;
+        }
+        p::first-line{
+            color: blue;
+        }
+        p::selection{
+            background-color: red;
+            color: black;
+        }
+        h1::before{
+            content: "⭐";
+        }
+        h1::after{
+            content: "🚀";
+        }
+        ol>li::marker{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learn Pseudo Element Selector ::</h1>
+    <!-- 
+    ::first-letter
+    ::first-line
+    ::selection 
+    ::after 
+    ::before
+    ::marker
+   
+    -->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A minus neque mollitia dignissimos quaerat dicta deleniti. Eaque labore fugiat ab doloremque quibusdam? Sunt voluptatum suscipit, repudiandae dicta atque sed voluptatem.</p>
+    <ol>
+        <li>Java Full Stack </li>
+        <li>Mern Stack </li>
+        <li>Python Full Stack </li>
+        <li>Software Testing</li>
+        <li></li>
+    </ol>
+    
+</body>
+</html>

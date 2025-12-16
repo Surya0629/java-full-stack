@@ -1,0 +1,8 @@
+@import "./utilities.css";
+*{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    background-color: red !important;
+}
