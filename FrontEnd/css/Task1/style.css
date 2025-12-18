@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: sans-serif;
 }
-.navbar{
+
+.navbar {
     height: 80px;
     width: 100%;
     background-color: #4071f4;
@@ -16,17 +18,20 @@ body{
     justify-content: space-between;
     padding: 0 50px;
 }
-a{
+
+a {
     color: inherit;
     /* inherit from parent */
     text-decoration: none;
 }
-.logo{
+
+.logo {
     /* border: 2px solid white; */
     font-size: 30px;
     font-weight: 800;
 }
-.navlinks{
+
+.navlinks {
     /* border: 2px solid white; */
     display: flex;
     gap: 40px;
@@ -34,73 +39,102 @@ a{
     font-weight: 600;
 
 }
-.navlinks>a:hover{
-   text-decoration: underline;
+
+.navlinks>a:hover {
+    text-decoration: underline;
 
 }
 
-.hero{
+.hero {
     height: calc(100vh - 80px);
     width: 100%;
     background-color: #eff8ff;
     display: flex;
 }
-.hero>section{
+
+.hero>section {
     /* border: 2px solid black; */
     height: 100%;
     width: 50%;
 }
-.hero-content{
+
+.hero-content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.hero-content>h1{
+
+.hero-content>h1 {
     font-size: 80px;
     font-weight: 800;
 }
-.hero-content span{
+
+.hero-content span {
     color: #4071f4;
 }
-.hero-image{
+
+.hero-image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.hero-image>img{
+
+.hero-image>img {
     height: 80%;
     width: 80%;
     /* border: 2px solid red; */
     object-fit: contain;
     object-position: center;
 }
-.card-container{
+
+.card-container {
     height: 100vh;
     width: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: #eff8ff;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    
+
 }
-.card{
-    border: 2px solid red;
+
+.card {
+    /* border: 2px solid red; */
     height: 600px;
     width: 300px;
     border-radius: 5%;
 
 }
-.imgcard{
-    border: 2px solid black;
+
+.imgcard {
+    /* border: 2px solid black; */
     height: 50%;
     width: 100%;
 
 }
-.textcard{
-    border: 2px solid black;
-     height: 50%;
-    width: 100%;
 
+.textcard {
+    /* border: 2px solid black; */
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+
+}
+
+.imgcard>img {
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid red; */
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+.textcard>p,h1{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
 }
