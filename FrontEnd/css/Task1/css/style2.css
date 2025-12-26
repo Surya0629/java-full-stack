@@ -1,0 +1,48 @@
+.cardContainer{
+     min-height: 100vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    background-color: #eff8ff;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; */
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);/*assingning column*/
+    grid-template-rows: 500px 500px 500px;/*assigning rows*/
+    justify-items: center;/*x-axis*/
+    align-items: center;
+
+}
+.card {
+    height: 400px;
+    width :300px;
+    background-color: aqua;
+    border: 2px solid black;
+}  
+.item1{
+    justify-self: flex-end;
+    align-self: flex-end;
+} 
+.item3{
+    justify-self: flex-start;
+    align-self: flex-end;
+}
+.item4{
+    justify-self: flex-start;
+    align-self: center;
+}
+.item6{
+      justify-self: flex-end;
+    align-self: center;
+
+}
+.item7{
+    justify-self: flex-end;
+    align-self: flex-start;
+}
+.item9{
+    justify-self: flex-start;
+    align-self: flex-start;
+}
