@@ -15,3 +15,41 @@ console.log(n4)
  console.log(n6)
  console.log(typeof n6)
  console.log(typeof typeof n6)
+
+ //BigInt--> to acess valur out of range -2^53-1 to 2^53-1, n is used to convert a number
+ // into big int
+ var v8 = 67673217887834789237n
+
+ // Comprasion OPerator.......==&&===,== checks only data is equal not data type its loose operator but 
+ //=== is a strictly comparision operator used to check data and data type 
+console.log(10=='10');   //true
+console.log(10==='10');  //false
+
+
+
+ var n9 = Symbol("Hello")// retuen a unique symbol value
+ var n10 = Symbol("Hello")
+
+ console.log(n9==n10);//false
+console.log(n9===n10);// strictly check, false 
+
+
+//     ------------------------------------------------------
+//    |-------------------------| Var   | let      | const  |
+//    |   decalre               |  Y    |   Y      |  N     |
+//    |   initialize            |  y    |   y      |  N     |
+//    |   declare &initialize   |  y    |   y      |  Y     |
+//    |   re-declare            |  y    |   N      |  N     |
+//    |   re-initialize         |  y    |   Y      |  N     |
+//    |   re-dec&reinitialize   |  y    |   N      |  N     |
+//    -------------------------------------------------------
+// 
+// 
+// 
+// 
+// 
+
+
+
+
+ 
