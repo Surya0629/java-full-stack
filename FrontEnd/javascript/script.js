@@ -43,11 +43,49 @@ console.log(n9===n10);// strictly check, false
 //    |   re-initialize         |  y    |   Y      |  N     |
 //    |   re-dec&reinitialize   |  y    |   N      |  N     |
 //    -------------------------------------------------------
-// 
-// 
-// 
-// 
-// 
+// ! TDZ (Temporal Dead Zone) : the time period between accessing let and const variable before decleration 
+// console.log(x);//---->  ReferenceError: Cannot access 'c' before initialization
+// let x = 10;
+// console.log(x);
+//  TDZ = you cannot use let or const variables before they are declared.
+
+//--> GEC (GLOBAL EXECUTION CONTEXT)
+debugger
+console.log("start");  //->Start
+console.log(a);        //->undefined 
+var a = 10;
+console.log(a);
+let b;
+console.log(b);
+b=20;
+const c= 100;
+console.log(c);
+console.log("end");
+
+//Types of varriable and it scope-
+// Global varriable can be accessed 
+
+//
+//  Global Varraible Scope <----Var---
+//                                    |
+//                                    |
+//
+//Loca
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
