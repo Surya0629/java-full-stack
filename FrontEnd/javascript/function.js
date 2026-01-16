@@ -1,39 +1,39 @@
-// // Function
+// // // Function
 
-// // 1)Named Function : A function which have a name 
+// // // 1)Named Function : A function which have a name 
 
-// greet();// function hosting -
-// /**
-//  *   Hoisting means:
-//      JavaScript moves declarations to the top of the file before running the code.
+// // greet();// function hosting -
+// // /**
+// //  *   Hoisting means:
+// //      JavaScript moves declarations to the top of the file before running the code.
 
-// 👉   Only declarations are hoisted, not values.
-//  */
+// // 👉   Only declarations are hoisted, not values.
+// //  */
 
-// function greet() {
-//     console.log("Welcome");
+// // function greet() {
+// //     console.log("Welcome");
 
+
+// // }
+// // console.log(greet);
+
+// console.log("start");
+// console.log(student);
+// var s1 = 100;
+// function student(){
+//     console.log("I am a Student");
 
 // }
-// console.log(greet);
+// console.log(trainer);
+// let s2 = 200;
+// console.log(s2);
+// function trainer(){
+//     console.log("I am a trainer ");
 
-console.log("start");
-console.log(student);
-var s1 = 100;
-function student(){
-    console.log("I am a Student");
-    
-}
-console.log(trainer);
-let s2 = 200;
-console.log(s2);
-function trainer(){
-    console.log("I am a trainer ");
-    
-}
-student();
-trainer();
-console.log("end");
+// }
+// student();
+// trainer();
+// console.log("end");
 
 /**
  * In **JavaScript**, **DP** and **EP** are related to how the **GEC (Global Execution Context)** is created and how code runs.
@@ -154,3 +154,32 @@ a → 10
  */
 
 
+
+
+//.....Annonymous function
+// 2) function 
+
+
+//-(3)---> function expression 
+
+
+
+
+//(4)---> parameterized function --
+function sum(n1 = 0, n2 = 0) {     //--> here n1 and n2 is default parameter means if forget to enter argument 
+    // then default values will be 0;
+
+    console.log(n1 + n2);
+
+}
+sum(10, 20);
+sum(20, 50);
+sum(30);//NaN--NotaNumber --Nan is number data type
+
+function demo1(n1,n2,n3,n4,n5){
+    console.log(n1,n2,n3,n4,n5);
+    console.log(arguments);
+    
+    
+}
+demo1(2,3,4,765,3,5,6,8,54,4,)
