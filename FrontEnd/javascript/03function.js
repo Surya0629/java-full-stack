@@ -166,20 +166,53 @@ a → 10
 
 
 //(4)---> parameterized function --
-function sum(n1 = 0, n2 = 0) {     //--> here n1 and n2 is default parameter means if forget to enter argument 
-    // then default values will be 0;
+// function sum(n1 = 0, n2 = 0) {     //--> here n1 and n2 is default parameter means if forget to enter argument 
+//     // then default values will be 0;
 
-    console.log(n1 + n2);
+//     console.log(n1 + n2);
 
-}
-sum(10, 20);
-sum(20, 50);
-sum(30);//NaN--NotaNumber --Nan is number data type
+// }
+// sum(10, 20);
+// sum(20, 50);
+// sum(30);//NaN--NotaNumber --Nan is number data type
 
-function demo1(n1,n2,n3,n4,n5){
-    console.log(n1,n2,n3,n4,n5);
-    console.log(arguments);
-    
-    
-}
-demo1(2,3,4,765,3,5,6,8,54,4,)
+// function demo1(n1,n2,n3,n4,n5){
+//     console.log(n1,n2,n3,n4,n5);
+//     console.log(arguments);
+
+
+// }
+// demo1(2,3,4,765,3,5,6,8,54,4,)
+
+
+// 10) Constructor function : USed to cerate objects
+//!Objects :it is used to store multiple data in the form of key value pairs
+
+// there are 3 ways to create object ;
+// 1)Object Literals
+// const obj1 = {
+//     id: 1,
+//     fname: "john",
+
+// };
+// console.log(obj1);
+
+// //2) Object constructor
+// const obj2 = new Object({id:2,
+//     fname:"Jane"
+// });
+// console.log(obj2);
+
+
+// //3) Constructor Function 
+// function Student (id, firstName){
+//     this.id = id;
+//     this.firstName = firstName;
+// }
+// let s1 = new Student(1,"James")
+// console.log(s1);
+
+// let s2 = new Student(2,"Clark");
+// console.log(s2);
+
+
