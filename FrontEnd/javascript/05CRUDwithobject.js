@@ -113,21 +113,62 @@
 
 
 
-let obj2 = {
-    id: 2,
-    name: {
-        firstNamr: "Surya",
-        lastNamr: "Pratap",
-    },
-    hobbies: ["Coding", "Singing", "Gaming"],
-    address: {
-        city: "Noida",
-        state: "UP",
-        pin: 234301
-    },
-    details: {
-        id: "JaneQSP1",
-        course: "MERN Stack",
-    },
+// let obj2 = {
+//     id: 2,
+//     name: {
+//         firstName: "Surya",
+//         lastNamr: "Pratap",
+//     },
+//     hobbies: ["Coding", "Singing", "Gaming"],
+//     address: {
+//         city: "Noida",
+//         state: "UP",
+//         pin: 234301
+//     },
+//     details: {
+//         id: "JaneQSP1",
+//         course: "MERN Stack",
+//     },
 
-};
+// };
+
+// // id,firstName,coding,city,id,course
+
+// let { id, name: { firstName }, hobbies: [, , h1], address: { city }, details: { id: detailId, course } } = obj2;
+// console.log((id , firstName,h1,city ,detailId,course));
+
+
+// // Array Destruction 
+
+// let aray = [10,20,30,40,60];
+// let [,h2,,h4] = aray;
+
+
+
+const user = {
+  id: 1,
+  name: "Leanne Graham",
+  username: "Bret",
+  email: "Sincere@april.biz",
+  address: {
+    street: "Kulas Light",
+    suite: "Apt. 556",
+    city: "Gwenborough",
+    zipcode: "92998-3874",
+    geo: {
+      lat: "-37.3159",
+      lng: "81.1496"
+    }
+  },
+  phone: "1-770-736-8031 x56442",
+  website: "hildegard.org",
+  company: {
+    name: "Romaguera-Crona",
+    catchPhrase: "Multi-layered client-server neural-net",
+    bs: "harness real-time e-markets"
+  }
+}
+
+//destructure --name.username,street,zipcode,lat,lng,companyname
+let{name,username,address:{street,zipcode},address:{geo:{lat,lng}},company:{name:cname}} = user;
+console.log(name,username,street,zipcode,lat,lng,cname);
